@@ -1,4 +1,4 @@
-#include "Headers/Member.hpp";
+#include "Headers/Member.hpp"
 #include <iostream>
 
 Member::Member(std::string name, std::string memberId, int yearJoined) : name(std::move(name)), memberId(std::move(memberId)), yearJoined(yearJoined) {}
