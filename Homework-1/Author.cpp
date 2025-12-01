@@ -1,7 +1,7 @@
 #include "Headers/Author.hpp"
 
 Author::Author() : name("Unknown"), birthYear(1900) {}
-Author::Author(const std::string& name, int birthYear) : name(std::move(name)), birthYear(birthYear) {}
+Author::Author(std::string name, int birthYear) : name(std::move(name)), birthYear(birthYear) {}
 
 std::string Author::to_string() const {
 	return name + " | born in " + std::to_string(birthYear) + "\n";

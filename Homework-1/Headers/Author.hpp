@@ -9,7 +9,7 @@ class Author {
 
 public:
 	Author();
-	Author(const std::string& name, int birthYear);
+	Author(std::string name, int birthYear);
 
 	std::string to_string() const;
 
