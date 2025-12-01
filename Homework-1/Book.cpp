@@ -66,7 +66,7 @@ Book& Book::operator=(Book&& src) noexcept {
 
 void Book::setYear(int year) {
 	if (year < 1850 || year > 2025) {
-		std::cerr << "ERR::Invalid year entered " << std::to_string(year) << ". Value must be between 1850 and 2025\n";
+		std::cerr << "ERR::Book::Invalid year entered " << std::to_string(year) << ". Value must be between 1850 and 2025\n";
 		return;
 	}
 	this->year = year;
@@ -74,7 +74,7 @@ void Book::setYear(int year) {
 
 void Book::setPrice(double price) {
 	if (price < 0) {
-		std::cerr << "ERR::Invalid price entered " << std::to_string(price) << ". Value must be >= 0\n";
+		std::cerr << "ERR::Book::Invalid price entered " << std::to_string(price) << ". Value must be >= 0\n";
 		return;
 	}
 

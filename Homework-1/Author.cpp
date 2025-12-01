@@ -18,7 +18,7 @@ void Author::setName(const std::string& name) {
 }
 void Author::setBirthYear(const int birthYear) {
 	if (birthYear < 1850 || birthYear > 2025) {
-		std::cerr << "ERR::Invalid year entered " << std::to_string(birthYear) << ". Value must be between 1850 and 2025\n";
+		std::cerr << "ERR::Author::Invalid year entered " << std::to_string(birthYear) << ". Value must be between 1850 and 2025\n";
 		return;
 	}
 
