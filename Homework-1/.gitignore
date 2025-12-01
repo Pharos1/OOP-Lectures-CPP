@@ -34,3 +34,9 @@
 # Compilation Folder
 x64/
 .vs/
+
+# VS 2022 Files
+*.sln
+*.filters
+*.vcxproj
+*.user
