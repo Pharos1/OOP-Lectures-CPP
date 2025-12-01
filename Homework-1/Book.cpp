@@ -82,5 +82,5 @@ void Book::setPrice(double price) {
 }
 
 std::string Book::to_string() const {
-	return "\"" + title + "\"" + " written by " + author.getName() + " published in " + std::to_string(year) + " priced at " + std::to_string(price) + " with ISBN " + isbn;
+	return "\"" + title + "\"" + " written by " + author.getName() + " published in " + std::to_string(year) + " priced at " + std::to_string(price) + " with ISBN " + isbn + "\n";
 }

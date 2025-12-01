@@ -5,7 +5,7 @@ Member::Member(std::string name, std::string memberId, int yearJoined) : name(st
 
 void Member::setMemberId(std::string memberId) {
 	if (memberId == "") {
-		std::cerr << "ERR::Empty memberId entered";
+		std::cerr << "ERR::Empty memberId entered\n";
 		return;
 	}
 
@@ -19,5 +19,5 @@ void Member::setYearJoined(int year) {
 }
 
 std::string Member::to_string() const {
-	return name + " with id " + memberId + " joined " + std::to_string(yearJoined);
+	return name + " with id " + memberId + " joined " + std::to_string(yearJoined) + "\n";
 }
