@@ -25,7 +25,7 @@ public:
 	const std::string& getTitle() const { return title; }
 	const Author& getAuthor() const { return author; }
 	int getYear() const { return year; }
-	double getPrice() const {return price; }
+	double getPrice() const { return price; }
 	const std::string& getIsbn() const { return isbn; }
 
 	inline static int getTotalBooks() { return totalBooks; }
