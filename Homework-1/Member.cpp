@@ -19,5 +19,5 @@ void Member::setYearJoined(int year) {
 }
 
 std::string Member::to_string() const {
-	return name + " with id " + memberId + " joined " + yearJoined;
+	return name + " with id " + memberId + " joined " + std::to_string(yearJoined);
 }
